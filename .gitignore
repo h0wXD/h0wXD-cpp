@@ -4,6 +4,10 @@
 *.o
 *.obj
 
+# Code Blocks
+*.depend
+*.layout
+
 # Precompiled Headers
 *.gch
 *.pch

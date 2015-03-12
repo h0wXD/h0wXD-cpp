@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="h0wXD.IO/h0wXD.IO.cbp" />
+		<Project filename="h0wXD.IO.VirtualFileSystem/h0wXD.IO.VirtualFileSystem.cbp">
+			<Depends filename="h0wXD.IO/h0wXD.IO.cbp" />
+		</Project>
+		<Project filename="Hello World/Hello World.cbp" />
+		<Project filename="h0wXD.IO.VirtualFileSystem.TestApp/h0wXD.IO.VirtualFileSystem.TestApp.cbp">
+			<Depends filename="h0wXD.IO.VirtualFileSystem/h0wXD.IO.VirtualFileSystem.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>
