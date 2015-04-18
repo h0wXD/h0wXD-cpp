@@ -67,19 +67,19 @@ namespace h0wXD
 	template<class _Ty, class _A = std::allocator<_Ty>>
 	class vector_mt : public std::vector<_Ty, _A>, public mutex {};
 
-	template<class _Ty, class _C = std::deque<_Ty>>
-	class queue : public std::queue<_Ty, _C>{};
-	template<class _Ty, class _C = std::deque<_Ty>>
-	class queue_mt : public std::queue<_Ty, _C>, public mutex {};
+	template<class _Ty, class _Seq = std::deque<_Ty>>
+	class queue : public std::queue<_Ty, _Seq>{};
+	template<class _Ty, class _Seq = std::deque<_Ty>>
+	class queue_mt : public std::queue<_Ty, _Seq>, public mutex {};
 
-	template<class _Ty, class _C = std::deque<_Ty>>
-	class deque : public std::deque<_Ty, _C>{};
-	template<class _Ty, class _C = std::deque<_Ty>>
-	class deque_mt : public std::deque<_Ty, _C>, public mutex {};
+	template<class _Ty, class _A = std::allocator<_Ty>>
+	class deque : public std::deque<_Ty, _A>{};
+	template<class _Ty, class _A = std::allocator<_Ty>>
+	class deque_mt : public std::deque<_Ty, _A>, public mutex {};
 
-	template<class _Ty, class _A = std::allocator<_Ty> >
+	template<class _Ty, class _A = std::allocator<_Ty>>
 	class list : public std::list<_Ty, _A>{};
-	template<class _Ty, class _A = std::allocator<_Ty> >
+	template<class _Ty, class _A = std::allocator<_Ty>>
 	class list_mt : public std::list<_Ty, _A>, public mutex {};
 
 	template<class _Ty, std::size_t _Size>
@@ -87,10 +87,10 @@ namespace h0wXD
 	template<class _Ty, std::size_t _Size>
 	class array_mt : public std::array<_Ty, _Size>, public mutex {};
 
-	template<class _Ty, class _C = std::deque<_Ty>>
-	class stack : public std::stack<_Ty, _C>{};
-	template<class _Ty, class _C = std::deque<_Ty>>
-	class stack_mt : public std::stack<_Ty, _C>, public mutex {};
+	template<class _Ty, class _A = std::deque<_Ty>>
+	class stack : public std::stack<_Ty, _A>{};
+	template<class _Ty, class _A = std::deque<_Ty>>
+	class stack_mt : public std::stack<_Ty, _A>, public mutex {};
 }
 
 #endif

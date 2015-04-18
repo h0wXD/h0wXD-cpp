@@ -45,10 +45,10 @@ namespace h0wXD
 
 		class AutoMutex
 		{
-			mutex* m_pMutex;
+			mutex *m_pMutex;
 
 		public:
-			explicit AutoMutex(mutex* _pMutex) :
+			explicit AutoMutex(mutex *_pMutex) :
 				m_pMutex(_pMutex)
 			{
 				m_pMutex->lock();
