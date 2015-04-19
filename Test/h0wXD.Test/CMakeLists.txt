@@ -10,11 +10,13 @@ SET(PACKAGE_STRING "${PACKAGE_NAME} ${PACKAGE_VERSION}")
 
 MESSAGE(STATUS "Added Project: " ${PACKAGE_STRING})
 
-INCLUDE_DIRECTORIES("../../Source/" ${PATH_LEST_INCLUDE})
+INCLUDE_DIRECTORIES("../../Source/" "." ${PATH_LEST_INCLUDE})
 
 FILE(GLOB H0WXD_TEST_SRC
     "*.hpp"
     "*.cpp"
+    "Tests/*.hpp"
+    "Tests/*.cpp"
 )
 
 MESSAGE(STATUS "Source Files: ")
